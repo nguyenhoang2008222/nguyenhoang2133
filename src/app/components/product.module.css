@@ -19,6 +19,7 @@ background-color: rgb(149, 238, 77);
 color: rgb(42, 63, 0);
 border-radius: 10%;
 margin-top: px;
+cursor: pointer;
 }
 .priceproduct{
     color: rgb(255, 60, 0);

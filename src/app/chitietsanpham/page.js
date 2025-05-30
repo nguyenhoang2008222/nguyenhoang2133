@@ -21,8 +21,10 @@ export default function ChiTietSanPham() {
                     </div>
                     <div className={styles.sell} >  
                  
-                    <p>1000000đ</p> 
-                    <a>99999999999</a>
+                    <p>1.000.000đ</p> 
+                    <a><br>2.000.000</br>
+
+                    </a>
                         </div>
                     <div className={styles.sanpham}>
                     <div className={styles.muangay} >   mua ngay  <br/>
@@ -36,8 +38,8 @@ export default function ChiTietSanPham() {
                 <h1>Giới Thiệu Mô Hình Gundam</h1>
 <ul>
     <li><strong>Gundam</strong> là một dòng mô hình robot nổi tiếng đến từ Nhật Bản.</li>
-            <img src="/gundam.jpg" alt="gundam" width="200" height="100">
-                    <Kmslider />
+            <img src="https://bizweb.dktcdn.net/100/503/392/products/0-a1bf7821-c55d-4fc9-a6b6-15cade66183e.jpg?v=1706807612953" alt="gundam" width="200" height="100">
+                    
             
     <li>Mô hình được dựa trên loạt phim hoạt hình (anime) Gundam nổi tiếng.</li>
     <li>Thường được gọi là <em>Gunpla</em> – viết tắt của “Gundam Plastic Model”.</li>
