@@ -36,6 +36,9 @@ export default function ChiTietSanPham() {
                 <h1>Giới Thiệu Mô Hình Gundam</h1>
 <ul>
     <li><strong>Gundam</strong> là một dòng mô hình robot nổi tiếng đến từ Nhật Bản.</li>
+            <img src="/gundam.jpg" alt="gundam" width="200" height="100">
+                    <Kmslider />
+            
     <li>Mô hình được dựa trên loạt phim hoạt hình (anime) Gundam nổi tiếng.</li>
     <li>Thường được gọi là <em>Gunpla</em> – viết tắt của “Gundam Plastic Model”.</li>
     <li>Được phân loại theo cấp độ:
