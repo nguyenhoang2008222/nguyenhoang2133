@@ -1,0 +1,54 @@
+.footer{
+  height: 200px;
+  background-size: cover;
+  
+  }
+  .item3{
+
+  width: 1033.6px;
+  display: flex;
+  justify-content: space-between;
+    justify-self: center;
+  align-items: center;
+  height: 100px;
+  
+  }
+  .copbyright{
+    width: 1033.6px;
+  
+    display: flex;
+  justify-content: space-between;
+    justify-self: center;
+  align-items: center;
+  text-align: center;
+  }
+  .title4{
+
+  height: 70px;
+  width:1033.6px ;
+  }
+  .footer {
+    color: white;
+    text-align: center;
+    padding: 10px;
+   background-color: rgb(82, 82, 82);
+  }
+  .title4 li :hover{
+ color: red;
+  }
+  .footer{
+    color: rgb(255, 255, 255);
+    ;
+  } 
+  .contact-info {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.contact-info a {
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+}
+.contact-info a:hover {
+    color: #007BFF;
+}

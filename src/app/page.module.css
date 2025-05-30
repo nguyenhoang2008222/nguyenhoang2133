@@ -1,0 +1,28 @@
+
+ 
+
+.conten {
+  color: rgb(0, 255, 76);
+  font-size: 50px;
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fd5858;
+  text-align: center;
+  background-image: url(https://wallpapers.com/images/featured/gundam-desktop-background-5oazfghk4uuci4gz.jpg);
+} 
+  
+ 
+
+
+.maincontent {
+  display: grid; 
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr); 
+  gap: 20px; 
+  padding: 20px;
+ 
+}
+  
+
+
+

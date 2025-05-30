@@ -1,0 +1,119 @@
+/* Phần header chính */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-image: url(https://media.istockphoto.com/id/1453971136/vi/anh/m%C3%A2y-tr%C3%AAn-b%E1%BA%A7u-tr%E1%BB%9Di.jpg?s=612x612&w=0&k=20&c=DiUKABdITM2eIg6ZdMv32qATzu0eWbX86rTcBuBvfJU= );
+  color: white;
+  background-size: cover;
+  border-bottom: 1px solid rgb(9, 255, 0);
+}
+
+/* Phần menu */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Danh sách menu chính */
+.nav {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  position: relative; /* Đảm bảo menu con hiển thị đúng */
+  list-style-type: none; /* Bỏ dấu chấm bên cạnh */
+}
+
+.nav a {
+  color: rgb(131, 47, 8);
+  text-decoration: none;
+  font-size: 20px;
+  border: 1px solid white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  display: block;
+}
+
+/* Màu nền khi hover vào mục */
+.nav li:hover {
+  background-color: rgb(0, 174, 255);
+  color: black;
+}
+
+/* CSS cho Mục Lục Con */
+.subMenu {
+  display: none; /* Mặc định, ẩn menu con */
+  position: absolute;
+  top: 100%; /* Đặt menu con bên dưới mục chính */
+  left: 0;
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Tạo bóng đổ */
+  border-radius: 8px; /* Bo tròn các góc */
+  min-width: 180px; /* Chiều rộng tối thiểu */
+  margin-top: 8px; /* Khoảng cách trên menu con */
+  z-index: 10; /* Đảm bảo menu con luôn nằm trên các phần tử khác */
+  opacity: 0; /* Ẩn menu con ban đầu */
+  visibility: hidden; /* Đảm bảo không hiển thị */
+  transition: opacity 0.3s ease, visibility 0s 0.3s; /* Hiệu ứng mượt mà */
+}
+
+/* Các mục trong submenu */
+.subMenu li {
+  margin-bottom: 10px;
+}
+
+.subMenu li a {
+  font-size: 16px;
+  color: #555; /* Màu chữ cho liên kết */
+  padding: 8px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng khi hover */
+  display: block;
+}
+
+/* Hiệu ứng hover cho mục con */
+.subMenu li a:hover {
+  background-color: #f1f1f1; /* Nền sáng khi hover */
+  color: #0070f3; /* Màu chữ khi hover */
+}
+
+/* Hiển thị menu con khi hover vào mục chính */
+.nav li:hover .subMenu {
+  display: block; /* Hiển thị menu con khi hover vào mục chính */
+  opacity: 1; /* Làm menu con hiện ra */
+  visibility: visible; /* Đảm bảo menu con hiển thị */
+  transition: opacity 0.3s ease, visibility 0s; /* Hiệu ứng mượt mà */
+}
+
+/* Hiệu ứng chuyển động fade-in cho menu con */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-10px); /* Menu con xuất hiện từ trên xuống */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Đảm bảo rằng các mục lục không bị xếp chồng lên nhau */
+.menuItem {
+  position: relative; /* Đảm bảo submenu được căn chỉnh đúng */
+}
+
+.subMenu {
+  max-width: 250px; /* Giới hạn chiều rộng menu con */
+  width: auto; /* Tự động điều chỉnh chiều rộng */
+  left: 0;
+}
+
